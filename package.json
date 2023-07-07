@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/code-killers/",
+    "build": "vite build --base=/source-code/",
     "preview": "vite preview"
   },
   "devDependencies": {
