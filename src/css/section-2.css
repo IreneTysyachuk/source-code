@@ -129,6 +129,10 @@
   margin: 0 auto;
 }
 
+.vegetables-button-order:hover {
+  background-color: #a1c487;
+}
+
 .vegetables-icon-text {
   padding-left: 7px;
 }
