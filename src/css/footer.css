@@ -49,7 +49,8 @@
     gap: 20px;
     margin-bottom: 40px;
 }
-.footer-nav-item {
+.footer-nav-link {
+    display: flex;
     color: #141414;
     font-size: 14px;
     line-height: 1.28;
@@ -87,7 +88,7 @@
     text-transform: uppercase;
     margin-bottom: 20px;
 }
-.adress {
+.footer-adress {
     color: #141414;
     text-align: center;
     font-size: 14px;
@@ -95,7 +96,11 @@
     letter-spacing: -0.018em;
 }
 
-
+@media screen and (min-width: 375px) {
+    .footer-container {
+        max-width: 365px;
+    }
+}
 @media screen and (min-width: 768px) {
     .footer-container {
         max-width: 734px;
@@ -109,6 +114,9 @@
     .footer-nav {
         margin-bottom: unset;
     }
+    .footer-soc {
+        text-align: start;
+    }
     .footer-soc-icon {
         width: 28px;
         height: 28px;
@@ -120,17 +128,20 @@
     .footer-tel {
         font-size: 18px;
         line-height: 1.33;
+        text-align: start;
     }
-    .adress {
+    .footer-adress {
         font-size: 18px;
         line-height: 1.33;
         letter-spacing: -0.023em;
+        text-align: start;
     }
+    
 }
 
 @media screen and (min-width: 1280px) {
     .footer-container {
-        min-width: 1280px;
+        max-width: 1280px;
         justify-content: unset;  
     }
     .footer-links {
@@ -143,8 +154,8 @@
         margin-left: 166px;
     }
     .footer-soc-link {
-        transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
         cursor: pointer;
     }
     .footer-soc-link:hover,
@@ -153,12 +164,36 @@
         fill: #A1C487;
     
     }
-    .footer-nav-item {
+    .footer-nav-link {
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         cursor: pointer;
     }
-    .footer-nav-item:hover,
-    .footer-nav-item:hover {
+    .footer-nav-link:hover,
+    .footer-nav-link:focus {
+        color: #A1C487;
+    }
+    .footer-logo-icon {
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        cursor: pointer;
+    }
+    .footer-logo:hover .footer-logo-icon,
+    .footer-logo:focus .footer-logo-icon {
+        fill: #A1C487;
+    }
+    .footer-logo-item {
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        cursor: pointer;
+    }
+    .footer-logo:hover .footer-logo-item,
+    .footer-logo:focus .footer-logo-item {
+        color: #A1C487;
+    }
+    .footer-tel {
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        cursor: pointer;
+    }
+    .footer-tel:hover,
+    .footer-tel:focus {
         color: #A1C487;
     }
 
