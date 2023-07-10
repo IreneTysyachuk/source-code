@@ -1,43 +1,148 @@
 .we-will {
- padding: 80px 0;
+  width: 100%;
+  background-color: white;
+}
+.container-we-will {
+ padding: 80px 20px;
+ max-width: 375px;
+ margin: 0 auto;
 }
 .title-we-will {
- font-weight: 500;
- font-size: 24px;
- line-height: 1.17;
- letter-spacing: -0.04em;
- color: #141414;;
- text-align: center;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.04em;
+  color: #141414;;
+  text-transform: uppercase;
+  box-shadow: 0px 4px 70px 0px #0000001A;
+  text-align: center;
+  margin-bottom: 20px;
+  max-width: 323px;
+  padding-left: 26px;
+  padding-right: 26px;
 }
 .text-we-will {
- font-weight: 400;
- font-size: 14px;
- line-height: 1.28;
- letter-spacing: -0.04em;
- color: #141414;
- text-align: center;
-}
-.sub-we-will {
- width: 100%;
-}
-.form-we-will {
- 
-}
-.we-will-phone {
-
-}
-.label-we-will {
-
-}
-.we-will-phone {
-
-}
-.we-will-phone {
-
-}
-.input-we-will {
- position: relative;
-}
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.04em;
+  color: #141414;
+  box-shadow: 0px 4px 70px 0px #0000001A;
+  text-align: center;
+  margin-bottom: 40px;
+  max-width: 323px;
+ }
+ .form-we-will {
+   position: relative;
+ }
+ .input-we-will {
+   display: block;
+   width: 100%;
+   height: 48px;
+   border: 1px solid #C1BDBD;
+   border-radius: 100px;
+   font-size: 14px;
+   line-height: 1.28;
+   letter-spacing: -0.04em;
+   color: #C1BDBD;
+   padding-left: 24px;
+ }
 .button-we-will {
- position: absolute;
+  position: absolute;
+  right: 0;
+  width: 105px;
+  height: 48px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.04em;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 100px;
+  background-color: #FC8A11;
+  cursor: pointer;
+  transform: translateY(-48px);
+}
+.button-we-will:hover,
+.button-we-will:focus {
+  background-color: #A1C487;
+}
+.img-we-will {
+  margin-top: 40px;
+}
+img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+@media screen and (min-width: 375px) {
+  .container-we-will {
+    max-width: 375px;
+  }
+} 
+@media screen and (min-width: 768px) {
+ .container-we-will {
+  padding: 100px 32px 173px 32px;
+  max-width: 768px;
+ }
+ .we-will-inform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+ .title-we-will {
+  font-size: 40px;
+  line-height: 1.1;
+  max-width: 524px;
+} 
+ .text-we-will {
+   font-size: 18px;
+   line-height: 1.5;
+   max-width: 524px;
+ }
+ .input-we-will {
+   width: 355px;
+ }
+  .img-we-will {
+    margin-top: 80px;
+  }
+} 
+@media screen and (min-width: 1280px) {
+  .container-we-will {
+    padding: 124px 32px;
+    display: flex;
+    flex-direction: row;
+    max-width: 1280px;
+  }
+  .title-we-will {
+    font-size: 48px;
+    line-height: 1.04;
+    padding: 0;
+    text-align: start;
+    margin-bottom: 40px;
+ } 
+ .text-we-will {
+   font-size: 18px;
+   line-height: 1.5;
+   text-align: start;
+   margin-bottom: 80px;
+ }
+ .img-we-will {
+   max-width: 525px;
+   margin-right: 0;
+ }
+ .we-will-call {
+ transform: translateX(-86px);
+ }
+ .container-we-will {
+   position: relative;
+}
+.we-will-inform {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  justify-content: flex-start;
+ }
 }
