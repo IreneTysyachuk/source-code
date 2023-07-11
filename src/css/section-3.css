@@ -14,7 +14,7 @@
   letter-spacing: -0.04em;
   color: #141414;;
   text-transform: uppercase;
-  box-shadow: 0px 4px 70px 0px #0000001A;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
   text-align: center;
   margin-bottom: 20px;
   max-width: 323px;
@@ -27,7 +27,7 @@
   line-height: 1.28;
   letter-spacing: -0.04em;
   color: #141414;
-  box-shadow: 0px 4px 70px 0px #0000001A;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
   text-align: center;
   margin-bottom: 40px;
   max-width: 323px;
@@ -76,6 +76,12 @@ img {
   margin: 0 auto;
   display: block;
 }
+.background-we-will {
+  border: none;
+  border-radius: 40px;
+  background-color: #FAF3E7;
+  background-image: url(./img/img-we-will/BG.png);
+}
 @media screen and (min-width: 375px) {
   .container-we-will {
     max-width: 375px;
@@ -102,10 +108,13 @@ img {
    max-width: 524px;
  }
  .input-we-will {
-   width: 355px;
+   width: 350px;
  }
   .img-we-will {
     margin-top: 80px;
+  }
+  .background-we-will {
+    border-radius: 80px;
   }
 } 
 @media screen and (min-width: 1280px) {
@@ -116,33 +125,35 @@ img {
     max-width: 1280px;
   }
   .title-we-will {
+    max-width: 614px;
     font-size: 48px;
     line-height: 1.04;
     padding: 0;
     text-align: start;
     margin-bottom: 40px;
- } 
- .text-we-will {
-   font-size: 18px;
-   line-height: 1.5;
-   text-align: start;
-   margin-bottom: 80px;
- }
- .img-we-will {
-   max-width: 525px;
-   margin-right: 0;
- }
- .we-will-call {
- transform: translateX(-86px);
- }
- .container-we-will {
-   position: relative;
-}
-.we-will-inform {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-  justify-content: flex-start;
- }
+     }
+  .text-we-will {
+    margin-left: 0;
+    max-width: 523px;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: start;
+    margin-bottom: 80px;
+    }
+  .container-we-will {
+    position: relative;
+    }
+    .we-will-inform {
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      justify-content: flex-start;
+      align-items: flex-start;
+     }
+  .img-we-will {
+    max-width: 525px;
+  }
+  .background-we-will {    
+   transform: translate(132%, 0);
+  }
 }
