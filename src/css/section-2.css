@@ -7,10 +7,7 @@
   width: 100%;
   max-width: 375px;
   margin: 0 auto;
-}
-
-.vegetables-section {
-  margin-top: 62px;
+  padding-top: 80px;
 }
 
 .vegetables-header-section-two {
@@ -169,7 +166,7 @@
 @media (min-width: 768px) and (max-width: 1279px) {
   .vegetables-container {
     max-width: 768px;
-    padding: 0 32px 0 32px;
+    padding: 101px 32px 0 32px;
   }
 
   .vegetables-header-section-two {
@@ -240,7 +237,7 @@
 @media (min-width: 1280px) {
   .vegetables-container {
     max-width: 1280px;
-    padding: 0 32.5px 0 32.5px;
+    padding: 124px 32.5px 0 32.5px;
   }
 
   .vegetables-header-section-two {
