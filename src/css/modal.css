@@ -1,7 +1,3 @@
-.container {
-  min-width: 375px;
-}
-
 .backdrop {
   position: fixed;
   top: 0;
@@ -10,9 +6,9 @@
   background-color: rgba(46, 47, 66, 0.4);
 }
 
-.backdrop.is-hidden .modal {
+/*.backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
-}
+}*/
 
 .modal {
   position: absolute;
@@ -234,9 +230,6 @@ input:invalid {
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
   .modal {
     background-image: url(../img/modal/girl-modal-1x.png);
     background-position: bottom right;
@@ -244,7 +237,6 @@ input:invalid {
     background-attachment: local;
     max-width: 704px;
     padding: 40px;
-    width: calc(100% - 80px);
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -264,6 +256,7 @@ input:invalid {
   .modal-item {
     width: 100%;
     height: 100%;
+    width: calc((100% - 24px) / 3);
   }
 
   .check-text {
@@ -283,10 +276,6 @@ input:invalid {
 }
 
 @media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-
   .modal {
     max-width: 891px;
     background-image: url(../img/modal/girl-modal-desk-1x.png);
@@ -303,6 +292,9 @@ input:invalid {
     gap: 20px;
   }
 
+  .modal-item {
+    width: calc((100% - 40px) / 3);
+  }
   .check-text {
     margin-bottom: 8px;
     font-size: 24px;
