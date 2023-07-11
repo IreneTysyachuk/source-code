@@ -161,9 +161,36 @@
 
 /* Tablet */
 @media only screen and (min-width: 768px) {
+  .users-iteam {
+    width: 54px;
+    height: 54px;
+  }
   .users-iteam img {
     width: 50px;
     height: 50px;
+  }
+  .user-img-text {
+    color: #141414;
+    text-align: center;
+    text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+    font-family: DM Sans;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: -0.4px;
+  }
+  .user-img-text span {
+    color: #141414;
+    text-align: center;
+    text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
   }
   .hero {
     padding: 64px 0 32px;
@@ -225,9 +252,37 @@
   }
 }
 @media only screen and (min-width: 1280px) {
+  .user-img-text {
+    color: #141414;
+    text-align: center;
+    text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+    font-family: DM Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.16;
+    letter-spacing: -0.48px;
+  }
+  .user-img-text span {
+    color: #141414;
+    text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+    font-family: DM Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -0.96px;
+    text-transform: uppercase;
+  }
+  .users-iteam {
+    width: 70px;
+    height: 70px;
+  }
   .users-iteam img {
     width: 66px;
     height: 66px;
+  }
+  .user-img-text {
   }
   .container {
     max-width: 1280px;
