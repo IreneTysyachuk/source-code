@@ -1,25 +1,25 @@
 <section class="hero">
-  <div class="container">
+  <div class="hero-container">
     <ul class="users-list list">
       <li class="users-iteam">
         <picture>
           <source
             srcset="
-              ./img/hero/desk/hero-img1.png 1x,
+              ./img/hero/desk/hero-img1.png    1x,
               ./img/hero/desk/hero-img1-2x.png 2x
             "
             media="(min-width: 1280px)"
           />
           <source
             srcset="
-              ./img/hero/tab/hero-img1.png 1x,
+              ./img/hero/tab/hero-img1.png    1x,
               ./img/hero/tab/hero-img1-2x.png 2x
             "
             media="(min-width: 768px)"
           />
           <source
             srcset="
-              ./img/hero/mob/hero-img1.png 1x,
+              ./img/hero/mob/hero-img1.png    1x,
               ./img/hero/mob/hero-img1-2x.png 2x
             "
             media="(max-width: 767px)"
@@ -98,24 +98,52 @@
         <p class="user-img-text"><span>2K</span><br />reviews</p>
       </li>
     </ul>
-    <div class="hero-description">
-      <h1 class="hero-title">
-        organic <span class="hero-h">vegetables</span> to your diet today!
-      </h1>
-      <p class="hero-p">
-        Our expertly curated vegetable baskets are made with the freshest,
-        highest quality vegetables available. Fresh Harvest Box has got you
-        covered. Fresh, high-quality vegetables in expertly curated vegetable
-        baskets delivered to you.
-      </p>
-      <button class="hero-btn" type="button">Shop now</button>
-
-      <div class="hero-img">
-        <img
-          class="big-girl"
-          src="../img/hero/hero-main-girl.png"
-          alt="girl smilling with vegetables"
-        />
+    <div class="hero-wrapper">
+      <div class="hero-description">
+        <h1 class="hero-title">
+          organic <span class="hero-h">vegetables</span> to your diet today!
+        </h1>
+        <p class="hero-p">
+          Our expertly curated vegetable baskets are made with the freshest,
+          highest quality vegetables available. Fresh Harvest Box has got you
+          covered. Fresh, high-quality vegetables in expertly curated vegetable
+          baskets delivered to you.
+        </p>
+        <button class="hero-btn" type="button">Shop now</button>
+      </div>
+      <div class="big-girl">
+        <div class="hero-img-bacg"></div>
+        <div class="hero-img-wrap">
+          <picture class="big-girl-img">
+            <source
+              srcset="
+                ./img/hero/desk/hero-main-desk.png   1x,
+                ./img/hero/desk/hero-main-desk2x.png 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./img/hero/tab/hero-main-tab.png   1x,
+                ./img/hero/tab/hero-main-tab2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./img/hero/mob/hero-main-img.png   1x,
+                ./img/hero/mob/hero-main-img2x.png 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <img
+              src="./img/hero/mob/hero-main-img.png"
+              alt="girl smilling with vegetables"
+              width="230px"
+              height="228px"
+            />
+          </picture>
+        </div>
       </div>
     </div>
     <div class="hero-block">
