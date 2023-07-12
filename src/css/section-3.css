@@ -50,6 +50,7 @@
 .button-we-will {
   position: absolute;
   right: 0;
+  top: 0;
   width: 105px;
   height: 48px;
   font-weight: 500;
@@ -61,7 +62,6 @@
   border-radius: 100px;
   background-color: #FC8A11;
   cursor: pointer;
-  transform: translateY(-48px);
 }
 .button-we-will:hover,
 .button-we-will:focus {
@@ -80,7 +80,7 @@ img {
   border: none;
   border-radius: 40px;
   background-color: #FAF3E7;
-  background-image: url(./img/img-we-will/BG.png);
+  background-image: url(../img/img-we-will/BG.png);
 }
 @media screen and (min-width: 375px) {
   .container-we-will {
@@ -123,6 +123,7 @@ img {
     display: flex;
     flex-direction: row;
     max-width: 1280px;
+    justify-content: space-between;
   }
   .title-we-will {
     max-width: 614px;
@@ -140,20 +141,12 @@ img {
     text-align: start;
     margin-bottom: 80px;
     }
-  .container-we-will {
-    position: relative;
-    }
     .we-will-inform {
-      position: absolute;
-      top: 50%;
-      transform: translate(0, -50%);
-      justify-content: flex-start;
+      justify-content: center;
       align-items: flex-start;
      }
   .img-we-will {
     max-width: 525px;
-  }
-  .background-we-will {    
-   transform: translate(132%, 0);
+    margin-top: 37px;
   }
 }
