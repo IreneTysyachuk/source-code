@@ -242,13 +242,7 @@ input:invalid {
     max-width: 704px;
     padding: 40px;
   }
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .hero {
-      background-image: url(../img/modal/girl-modal-2x.png);
-    }
-  }
+
   .modal-title {
     font-size: 40px;
     letter-spacing: -1.6px;
@@ -283,13 +277,6 @@ input:invalid {
   .modal {
     max-width: 891px;
     background-image: url(../img/modal/girl-modal-desk-1x.png);
-  }
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .hero {
-      background-image: url(../img/modal/girl-modal-desk-2x.png);
-    }
   }
 
   .modal-list {
