@@ -19,7 +19,7 @@
     />
     
     <title>Veggie boost</title>
-    <link rel="stylesheet" href="/source-code/assets/index-cbc4f338.css">
+    <link rel="stylesheet" href="/source-code/assets/index-90d07abb.css">
   </head>
   <body>
     
@@ -30,7 +30,203 @@
       
       
       
-      
+      <div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button type="button" class="close-modal-btn" data-modal-close>
+      <svg class="modal-icon-close" width="18" height="18">
+        <use href="/source-code/assets/icons-0c26b6ca.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h2 class="modal-title">Your Order</h2>
+    <form class="modal-form">
+      <ul class="modal-list">
+        <li class="modal-item">
+          <input
+            type="checkbox"
+            name="cabbage"
+            id="cabbage"
+            class="input-check visually-hidden"
+            value="true"
+          />
+          <label for="cabbage" class="check-text"
+            >Cabbage Basket
+            <span class="modal-check">
+              <svg class="icon-checkbox" width="10" height="8">
+                <use href="/source-code/assets/icons-0c26b6ca.svg#icon-check"></use>
+              </svg>
+            </span>
+          </label>
+          <p class="modal-item-text">Plant</p>
+          <div class="modal-img">
+            <picture>
+              <source
+                srcset="/source-code/assets/cabbage-modal-desk-1x-7842e3de.png 1x, /source-code/assets/cabbage-modal-desk-2x-7fa6bf9b.png 2x"
+                width="243"
+                height="200"
+                media="(min-width: 1158px)"
+              />
+              <source
+                srcset="/source-code/assets/cabbage-modal-tab-1x-7359cd41.png 1x, /source-code/assets/cabbage-modal-tab-2x-5a49faf2.png 2x"
+                width="172"
+                height="142"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/source-code/assets/cabbage-modal-1x-699db4f2.png 1x, /source-code/assets/cabbage-modal-2x-94363741.png 2x"
+                width="94"
+                height="78"
+                media="(max-width: 767px)"
+              />
+              <img
+                src="/source-code/assets/cabbage-modal-1x-699db4f2.png"
+                alt="cabbage"
+                width="94"
+                height="78"
+              />
+            </picture>
+          </div>
+        </li>
+        <li class="modal-item">
+          <input
+            type="checkbox"
+            name="tomato"
+            id="tomato"
+            class="input-check visually-hidden"
+            value="true"
+          />
+          <label for="tomato" class="check-text"
+            >Tomato Basket
+            <span class="modal-check">
+              <svg class="icon-checkbox" width="10" height="8">
+                <use href="/source-code/assets/icons-0c26b6ca.svg#icon-check"></use>
+              </svg>
+            </span>
+          </label>
+          <p class="modal-item-text">Plant</p>
+          <div class="modal-img">
+            <picture>
+              <source
+                srcset="/source-code/assets/tomato-modal-desk-1x-104d46f1.png 1x, /source-code/assets/tomato-modal-desk-2x-3d4ae681.png 2x"
+                width="243"
+                height="200"
+                media="(min-width: 1158px)"
+              />
+              <source
+                srcset="/source-code/assets/tomato-modal-tab-1x-069c453c.png 1x, /source-code/assets/tomato-modal-tab-2x-26b8eb5a.png 2x"
+                width="172"
+                height="142"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAABOCAMAAACe2lHHAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAACxMAAAsTAQCanBgAAAL3UExURUdwTJ9gQM+lh4lUOJ1pVJtXR9KAZ4NTPUYiF7BiVFMlHIVXQNuEY9pxVKWBRVIZFFokG/iMWItTO/SYbJdPN/uCY0MHC0kKDU4bEbuddaY2LbmhctehYKZ0P45fRoJUOZd7Q/V3VkELDKQ8MppnUNNQUeF8Z5hqUJxxTP6RZ/uEZdLAmcWqdeDHocuqjvVvVPeCZPhnWf2DY9G1m+PLqfCUYLOOcIgpHWlCM44pG2YpIWoqIogpHPqCZf9vT7GWZOS8o9NNN145LPBZP/xsUtfGqYBTJ/+Pa+iIXvTi0n5WIWFnPvprU+M4O1YqL6EoHlYoF+4qKnZGL38OFZ9oUuMmJ24/KohROYFONoBJMv9oTYcQF6cpIZhaP/42Nv9EPapoTJpkTpATGZgeG2U6JpViTP9hTHQME4JELotXQVEdEZJfSf85PfwwMpBWPsQcI3Y+J/9aRXxDLf90T41TOqBjS/+JWo9aRKptVcweJNwiJv57U/9OQpZTOqJgRoocF3pMN5hdRmsNEbVyVGUwHZNbQ9UgJZ9aQP9vVZIbGZNIMaAfHs4oJvYsLf+ZY1wxHbIqJEgdELoeIXE2If+DVY9ONat3YHkTE5knHKwmH7IZIcIrJ4lIMW4qF5wRHqgUINyYeYw/KWMKEHJJNv6perY2Kf+SXduJaM4zJtGNcsmEZ0snFP9+Xq0yJv+Nav9DRqBQNIQ6Iph7PMZsREwWDPQ2MOgyLKgfHz8dD/xGNsZ6V6JvWtgrK/9UTqliRbh/Y1IFDVoGDrkoKn9aJv/Aov+gbe26mp6MUN0+LbegYtK+ibo7MP9RO9mqjPFUOL6vcv+xj/FJNoJuOfrTwNd+YOzGq8Y/LcGRX/+Xe8mxev/IsuKzlL6Pcm5dKPd5bqyWV5BtMeulhEYFC7NZM4Z8LunSt9vImamAN+OVdeBZTNlJM//i0v/x62dUHO9tRH4hGLWCTG9JGJxbJ+aHVd2ETaxsMNdqPq6MaToXDd1nYtFbWMmcgqyDdW5z2CQAAADhdFJOUwD+JVkTJRr+NQhpmUMv/kqI/Xb+NXmXxSHl46T+l+TH5VjonEz6htW56MDuzYw4i6nb2nJI8GrC5/u1z+mbxdfNoqmutLPyq9im4mprqf///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////qeV8s8AAAuESURBVFjD7Vh3UNppGo7RiGaNiZuy6Zvsbno220u2Xy9zMyoBQQzFAoIoijQVEBAVC/YeNVFDsMaCEWM3sffeTdRY03uy5f649we5ub3TndW97MzdjA/8GH4wPu/zPd/7vt8ra9asYhWrWMUq/ndharxhremvRW588L3r16+/f/SgmdGWl8++7kBBFY0QlJfHz8+fP2j8ktmNdlZak28+AXZ1+OOZ/CNbX65Lb15V9rA7NRwCJza2eMZCrX5/v9FLtOZi2012e7v5hJAjjH06I4zlh4cfMdN9tWHrl1++++7WDf+V+LabPWXt7MdNTY9p93o1HKE6PHzz0C745p3reXlBsfn84aNmpr9cfLO2pKys7JZmpivzwUSLUGgx1DTx4KMN+98j0IKCgoRCfmx4fv777/6yLX91MKsSW6LVTrb1tjy/dvda70xTU9N4vcqiCkAjEIJ0bjXAin7JlhvvjEzOqtT2tM9naoBc03v30aNHU3du14eLClwLCjhBNGF4d99tlSq8If+o8VvH3l6h86cjLyRnNfd0Pu26lnv5bm/dIIGjHh1VqRoIrgWurlAQnIbbd+70qcO7Vfw/mdXtWGHOA/3VrKxbg5YnU+uu3b1b3M4mgNzu+gYOGeirqghBsaO3b9erw2/Xq1Rb/9i0opzdYnk6KfJqclvbhYuRzfem64qa29k0znB932gDn+wK6guqCHnh9fUNfP7uNJX6iEHv2hXSg/wLF9raBps7O7MGK7WkdgI0B5VKHQvsrmRygYjG56vVnOLyhgY1f3qF9Ikg/6Kevlmp7GnWtlexCQTIRr4Q8R742WyknG9p7kEKCafrVkRvdNLS8jTQwzM5OblS2+lT4gaE0OA4HFcSPKpcg2gEDl/4oHXKQh0e+6h3JelveDgd5F/UIzJa6YMNxFq7kWlskEwgkdzcyAUkEYHD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 1x, /source-code/assets/tomato-modal-2x-0bfadd5a.png 2x"
+                width="94"
+                height="78"
+                media="(max-width: 767px)"
+              />
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAABOCAMAAACe2lHHAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAACxMAAAsTAQCanBgAAAL3UExURUdwTJ9gQM+lh4lUOJ1pVJtXR9KAZ4NTPUYiF7BiVFMlHIVXQNuEY9pxVKWBRVIZFFokG/iMWItTO/SYbJdPN/uCY0MHC0kKDU4bEbuddaY2LbmhctehYKZ0P45fRoJUOZd7Q/V3VkELDKQ8MppnUNNQUeF8Z5hqUJxxTP6RZ/uEZdLAmcWqdeDHocuqjvVvVPeCZPhnWf2DY9G1m+PLqfCUYLOOcIgpHWlCM44pG2YpIWoqIogpHPqCZf9vT7GWZOS8o9NNN145LPBZP/xsUtfGqYBTJ/+Pa+iIXvTi0n5WIWFnPvprU+M4O1YqL6EoHlYoF+4qKnZGL38OFZ9oUuMmJ24/KohROYFONoBJMv9oTYcQF6cpIZhaP/42Nv9EPapoTJpkTpATGZgeG2U6JpViTP9hTHQME4JELotXQVEdEZJfSf85PfwwMpBWPsQcI3Y+J/9aRXxDLf90T41TOqBjS/+JWo9aRKptVcweJNwiJv57U/9OQpZTOqJgRoocF3pMN5hdRmsNEbVyVGUwHZNbQ9UgJZ9aQP9vVZIbGZNIMaAfHs4oJvYsLf+ZY1wxHbIqJEgdELoeIXE2If+DVY9ONat3YHkTE5knHKwmH7IZIcIrJ4lIMW4qF5wRHqgUINyYeYw/KWMKEHJJNv6perY2Kf+SXduJaM4zJtGNcsmEZ0snFP9+Xq0yJv+Nav9DRqBQNIQ6Iph7PMZsREwWDPQ2MOgyLKgfHz8dD/xGNsZ6V6JvWtgrK/9UTqliRbh/Y1IFDVoGDrkoKn9aJv/Aov+gbe26mp6MUN0+LbegYtK+ibo7MP9RO9mqjPFUOL6vcv+xj/FJNoJuOfrTwNd+YOzGq8Y/LcGRX/+Xe8mxev/IsuKzlL6Pcm5dKPd5bqyWV5BtMeulhEYFC7NZM4Z8LunSt9vImamAN+OVdeBZTNlJM//i0v/x62dUHO9tRH4hGLWCTG9JGJxbJ+aHVd2ETaxsMNdqPq6MaToXDd1nYtFbWMmcgqyDdW5z2CQAAADhdFJOUwD+JVkTJRr+NQhpmUMv/kqI/Xb+NXmXxSHl46T+l+TH5VjonEz6htW56MDuzYw4i6nb2nJI8GrC5/u1z+mbxdfNoqmutLPyq9im4mprqf///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////qeV8s8AAAuESURBVFjD7Vh3UNppGo7RiGaNiZuy6Zvsbno220u2Xy9zMyoBQQzFAoIoijQVEBAVC/YeNVFDsMaCEWM3sffeTdRY03uy5f649we5ub3TndW97MzdjA/8GH4wPu/zPd/7vt8ra9asYhWrWMUq/ndharxhremvRW588L3r16+/f/SgmdGWl8++7kBBFY0QlJfHz8+fP2j8ktmNdlZak28+AXZ1+OOZ/CNbX65Lb15V9rA7NRwCJza2eMZCrX5/v9FLtOZi2012e7v5hJAjjH06I4zlh4cfMdN9tWHrl1++++7WDf+V+LabPWXt7MdNTY9p93o1HKE6PHzz0C745p3reXlBsfn84aNmpr9cfLO2pKys7JZmpivzwUSLUGgx1DTx4KMN+98j0IKCgoRCfmx4fv777/6yLX91MKsSW6LVTrb1tjy/dvda70xTU9N4vcqiCkAjEIJ0bjXAin7JlhvvjEzOqtT2tM9naoBc03v30aNHU3du14eLClwLCjhBNGF4d99tlSq8If+o8VvH3l6h86cjLyRnNfd0Pu26lnv5bm/dIIGjHh1VqRoIrgWurlAQnIbbd+70qcO7Vfw/mdXtWGHOA/3VrKxbg5YnU+uu3b1b3M4mgNzu+gYOGeirqghBsaO3b9erw2/Xq1Rb/9i0opzdYnk6KfJqclvbhYuRzfem64qa29k0znB932gDn+wK6guqCHnh9fUNfP7uNJX6iEHv2hXSg/wLF9raBps7O7MGK7WkdgI0B5VKHQvsrmRygYjG56vVnOLyhgY1f3qF9Ikg/6Kevlmp7GnWtlexCQTIRr4Q8R742WyknG9p7kEKCafrVkRvdNLS8jTQwzM5OblS2+lT4gaE0OA4HFcSPKpcg2gEDl/4oHXKQh0e+6h3JelveDgd5F/UIzJa6YMNxFq7kWlskEwgkdzcyAUkEYHD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"
+                alt="tomato"
+                width="94"
+                height="78"
+              />
+            </picture>
+          </div>
+        </li>
+        <li class="modal-item">
+          <input
+            type="checkbox"
+            name="vegetables"
+            id="vegetables"
+            class="input-check visually-hidden"
+            value="true"
+          />
+          <label for="vegetables" class="check-text"
+            >Vegetables Basket
+            <span class="modal-check">
+              <svg class="icon-checkbox" width="10" height="8">
+                <use href="/source-code/assets/icons-0c26b6ca.svg#icon-check"></use>
+              </svg>
+            </span>
+          </label>
+          <p class="modal-item-text">Plant</p>
+          <div class="modal-img">
+            <picture>
+              <source
+                srcset="/source-code/assets/vegetables-modal-desk-1x-73d27a41.png 1x, /source-code/assets/vegetables-modal-desk-2x-6b00e758.png 2x"
+                width="243"
+                height="200"
+                media="(min-width: 1158px)"
+              />
+              <source
+                srcset="/source-code/assets/vegetables-modal-tab-1x-3977dd82.png 1x, /source-code/assets/vegetables-modal-tab-2x-fa4870c5.png 2x"
+                width="172"
+                height="142"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/source-code/assets/vegetables-modal-1x-67b2d824.png 1x, /source-code/assets/vegetables-modal-2x-3c843ad8.png 2x"
+                width="94"
+                height="78"
+                media="(max-width: 767px)"
+              />
+              <img
+                src="/source-code/assets/vegetables-modal-1x-67b2d824.png"
+                alt="vegetables"
+                width="94"
+                height="78"
+              />
+            </picture>
+          </div>
+        </li>
+      </ul>
+      <div class="field-form">
+        <div class="modal-field">
+          <label for="user-name" class="modal-label"></label>
+          <input
+            type="text"
+            pattern="[a-z]"
+            class="modal-input"
+            name="user-name"
+            id="user-name"
+            placeholder="Enter full name..."
+          />
+        </div>
+        <div class="modal-field">
+          <label for="user-email" class="modal-label"></label>
+          <input
+            type="email"
+            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+            class="modal-input"
+            name="user-email"
+            id="user-email"
+            placeholder="Enter email..."
+          />
+        </div>
+        <div class="modal-field">
+          <label for="user-card" class="modal-label"></label>
+          <input
+            type="text"
+            pattern="[a-z]{4,8}"
+            class="modal-input"
+            name="user-card"
+            id="user-card"
+            placeholder="Enter card.."
+          />
+        </div>
+        <div class="modal-field-textarea">
+          <textarea
+            name="user-comment"
+            id="user-comment"
+            placeholder="Enter comments..."
+            class="modal-textarea"
+          ></textarea>
+        </div>
+        <button type="submit" class="modal-btn">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>
+
     </main>
 
     <footer class="footer">
