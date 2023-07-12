@@ -118,8 +118,8 @@
   letter-spacing: -0.56px;
   text-transform: uppercase;
   margin-bottom: 8px;
-  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
-    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+  /* box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3); */
 }
 .hero-btn:hover {
   color: #a1c487;
@@ -147,8 +147,8 @@
   border-radius: 500px;
   position: absolute;
   transform: rotate(344deg);
-  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
-    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+  /* box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3); */
 }
 
 .hero-img-wrap {
@@ -210,6 +210,8 @@
   line-height: 1.2;
   letter-spacing: -0.4px;
   text-transform: uppercase;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-link:hover {
   background-color: #f9f7f4;
