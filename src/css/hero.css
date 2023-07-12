@@ -10,12 +10,14 @@
   background-color: #a1c487;
   padding-top: 50px;
   padding-bottom: 20px;
+  margin: 0 auto;
 }
 .hero-container {
   min-width: 320px;
   max-width: 375px;
   padding-left: 20px;
   padding-right: 20px;
+  margin: 0 auto;
 }
 .users-list {
   display: flex;
@@ -68,7 +70,7 @@
 .hero-title {
   width: 100%;
   color: #fff;
-  text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   font-family: DM Sans;
   font-size: 40px;
   font-style: normal;
@@ -85,7 +87,7 @@
 .hero-p {
   width: 100%;
   color: #fff;
-  text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   font-family: DM Sans;
   font-size: 14px;
   font-style: normal;
@@ -98,15 +100,16 @@
   width: 68px;
   height: 68px;
   border-radius: 50%;
-  border-color: #faf3e7;
+
   background-color: #faf3e7;
   border: none;
 
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   flex-shrink: 0;
   transform: rotate(-14deg);
   color: #fc8a11;
   text-align: center;
-  text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   font-family: DM Sans;
   font-size: 14px;
   font-style: normal;
@@ -117,7 +120,6 @@
   margin-bottom: 8px;
 }
 .hero-btn:hover {
-  border-color: #eaf7e5;
   color: #a1c487;
 }
 .big-girl {
@@ -196,7 +198,7 @@
 
   color: #fff;
   text-align: center;
-  text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   font-family: DM Sans;
   font-size: 10px;
   font-style: normal;
@@ -223,7 +225,7 @@
   .user-img-text {
     color: #141414;
     text-align: center;
-    text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
     font-family: DM Sans;
     font-size: 10px;
     font-style: normal;
@@ -234,7 +236,7 @@
   .user-img-text span {
     color: #141414;
     text-align: center;
-    text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
     font-family: DM Sans;
     font-size: 18px;
     font-style: normal;
@@ -253,7 +255,7 @@
   .hero-title {
     width: 656px;
     color: #fff;
-    text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
     font-family: DM Sans;
     font-size: 54px;
     font-style: normal;
@@ -270,7 +272,7 @@
   .hero-p {
     width: 491px;
     color: #fff;
-    text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
     font-family: DM Sans;
     font-size: 14px;
     font-style: normal;
@@ -370,7 +372,7 @@
   .user-img-text {
     color: #141414;
     text-align: center;
-    text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
     font-family: DM Sans;
     font-size: 12px;
     font-style: normal;
@@ -380,7 +382,7 @@
   }
   .user-img-text span {
     color: #141414;
-    text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
     font-family: DM Sans;
     font-size: 24px;
     font-style: normal;
@@ -434,13 +436,14 @@
 
     color: #fff;
     text-align: center;
-    text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
-    font-family: DM Sans;
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
     line-height: 1.16;
     letter-spacing: -0.48px;
     text-transform: uppercase;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
