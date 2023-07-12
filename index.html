@@ -19,6 +19,7 @@
     />
     
     <title>Veggie boost</title>
+    <script type="module" crossorigin src="/source-code/assets/index-0bb84193.js"></script>
     <link rel="stylesheet" href="/source-code/assets/index-7f01c34c.css">
   </head>
   <body>
@@ -56,7 +57,7 @@
     </button>
   </div>
 
-  <div class="mob-menu js-menu-container">
+  <div class="mob-menu js-menu-container" id="mobile-menu">
     <div class="mob-menu-logo-btn">
       <a href="" class="mob-menu-logo">
         <svg class="mob-menu-logo-icon" width="16" height="16">
@@ -81,7 +82,7 @@
           <a class="mob-menu-link" href="#Contacts">Contacts</a>
         </li>
         <li class="mob-menu-item">
-          <a class="mob-menu-link" href="#Your_Order">
+          <a class="mob-menu-link" href="#" data-modal-open4>
             <svg class="mob-menu-icon" width="20" height="20">
               <use href="/source-code/assets/icons-0c26b6ca.svg#icon-shopping-cart"></use>
             </svg>
@@ -178,7 +179,9 @@
           covered. Fresh, high-quality vegetables in expertly curated vegetable
           baskets delivered to you.
         </p>
-        <button class="hero-btn" type="button" data-modal-open>Shop now</button>
+        <button class="hero-btn" type="button" data-modal-open2>
+          Shop now
+        </button>
       </div>
       <div class="big-girl">
         <div class="hero-img-bacg"></div>
@@ -683,7 +686,7 @@
     </div>
 
     <div class="vegetables-button">
-      <button class="vegetables-button-order" type="button" data-modal-open>
+      <button class="vegetables-button-order" type="button" data-modal-open3>
         <div class="vegetables-icon-text">
           <svg class="vegetables-icon-order">
             <use href="/source-code/assets/icons-0c26b6ca.svg#icon-arrow"></use>
@@ -1022,13 +1025,12 @@
 </footer>
 
 
-    <script src="./modal.js"></script>
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-    <script defer src="./mobile-menu.js"></script>
+    
   </body>
 </html>
