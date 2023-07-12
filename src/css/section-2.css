@@ -1,0 +1,320 @@
+.vegetables-item-desktop {
+  display: none;
+}
+
+.vegetables-container {
+  padding: 0 20px 0 20px;
+  width: 100%;
+  max-width: 375px;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+
+.vegetables-header-section-two {
+  color: #141414;
+  text-align: center;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  font-family: DM Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.96px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0 0 14px 0;
+}
+
+.vegetables-text-section-two {
+  color: #141414;
+  text-align: center;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.56px;
+  margin: 0;
+  padding: 0 20px 40px 20px;
+}
+
+.vegetables-header-card {
+  color: #141414;
+  font-family: DM Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.96px;
+  padding: 40px 0 8px 20px;
+}
+
+.vegetables-text-card {
+  color: #141414;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.28px;
+  padding-left: 20px;
+}
+
+.vegetables-price-card {
+  color: #141414;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.56px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+.vegetables-card-list {
+  background-color: #eaf7e5;
+  border-radius: 20px;
+}
+
+.vegetables-item-list-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0;
+}
+
+.vegetables-card-image {
+  position: relative;
+  height: 261px;
+  margin-bottom: 22px;
+}
+
+.vegetables-card-image img {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.vegetables-icon-oval {
+  fill: #141414;
+  opacity: 0.10000000149011612;
+  filter: blur(13.591408729553223px);
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 180px;
+  bottom: 0;
+  right: 0;
+  width: 250px;
+  height: 94px;
+}
+
+.vegetables-button {
+  padding-top: 20px;
+}
+
+.vegetables-button-order {
+  background-color: #fc8a11;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  border-radius: 50%;
+  display: block;
+  border-width: 0px;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  padding: 0;
+  margin: 0 auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.vegetables-button-order:hover {
+  background-color: #a1c487;
+}
+
+.vegetables-icon-text {
+  padding-left: 7px;
+}
+
+.vegetables-icon-order {
+  fill: #fff;
+  width: 14px;
+  height: 14px;
+  position: relative;
+  top: 9px;
+}
+
+.vegetables-text-order {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.56px;
+  text-transform: uppercase;
+  display: block;
+  transform: rotate(-14deg);
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .vegetables-container {
+    max-width: 768px;
+    padding: 101px 32px 0 32px;
+  }
+
+  .vegetables-header-section-two {
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: -1.12px;
+  }
+
+  .vegetables-text-section-two {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.72px;
+    padding-left: 103px;
+    padding-right: 103px;
+  }
+
+  .vegetables-item-list-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .vegetables-card-list {
+    width: calc((100% - 20px) / 2);
+  }
+
+  .vegetables-header-card {
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: -1.12px;
+    padding: 64px 0 8px 24px;
+  }
+
+  .vegetables-text-card {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.36px;
+    padding-left: 24px;
+  }
+
+  .vegetables-price-card {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.72px;
+  }
+
+  .vegetables-button-order {
+    width: 114px;
+    height: 114px;
+  }
+
+  .vegetables-text-order {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.72px;
+  }
+
+  .vegetables-icon-text {
+    padding-left: 18px;
+  }
+
+  .vegetables-button {
+    padding-top: 40px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .vegetables-container {
+    max-width: 1280px;
+    padding: 124px 32.5px 0 32.5px;
+  }
+
+  .vegetables-header-section-two {
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: -1.6px;
+  }
+
+  .vegetables-text-section-two {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.72px;
+    padding-left: 359px;
+    padding-right: 359px;
+  }
+  .vegetables-item-list-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .vegetables-card-list {
+    width: calc((100% - 48px) / 3);
+  }
+
+  .vegetables-item-desktop {
+    display: block;
+  }
+
+  .vegetables-header-card {
+    padding: 64px 0 8px 24px;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: -1.28px;
+  }
+
+  .vegetables-text-card {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.36px;
+    padding-left: 24px;
+  }
+
+  .vegetables-price-card {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.72px;
+    padding-left: 24px;
+    padding-bottom: 24px;
+  }
+  .vegetables-photo-desk {
+    margin: 0 auto;
+  }
+
+  .vegetables-button-order {
+    width: 114px;
+    height: 114px;
+  }
+
+  .vegetables-text-order {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.72px;
+  }
+
+  .vegetables-icon-text {
+    padding-left: 18px;
+  }
+
+  .vegetables-button {
+    padding-top: 40px;
+  }
+  .vegetables-card-image {
+    margin-bottom: 32px;
+  }
+}
