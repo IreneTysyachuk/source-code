@@ -131,17 +131,13 @@
   flex-direction: row;
   align-items: center;
   gap: 4px;
-  padding: 0;
+  padding: 0 0 0 7px;
   margin: 0 auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .vegetables-button-order:hover {
   background-color: #a1c487;
-}
-
-.vegetables-icon-text {
-  padding-left: 7px;
 }
 
 .vegetables-icon-order {
@@ -155,7 +151,7 @@
 .vegetables-text-order {
   color: #fff;
   text-align: center;
-  text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -220,16 +216,13 @@
   .vegetables-button-order {
     width: 114px;
     height: 114px;
+    padding-left: 18px;
   }
 
   .vegetables-text-order {
     font-size: 18px;
     line-height: 24px;
     letter-spacing: -0.72px;
-  }
-
-  .vegetables-icon-text {
-    padding-left: 18px;
   }
 
   .vegetables-button {
@@ -299,16 +292,13 @@
   .vegetables-button-order {
     width: 114px;
     height: 114px;
+    padding-left: 18px;
   }
 
   .vegetables-text-order {
     font-size: 18px;
     line-height: 24px;
     letter-spacing: -0.72px;
-  }
-
-  .vegetables-icon-text {
-    padding-left: 18px;
   }
 
   .vegetables-button {
