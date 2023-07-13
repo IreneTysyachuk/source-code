@@ -3,7 +3,7 @@
   background: #eaf7e5;
 }
 .footer-container {
-  padding: 80px 15px;
+  padding: 80px 20px;
   max-width: 365px;
   margin: 0 auto;
 }
@@ -102,6 +102,8 @@
     max-width: 734px;
     display: flex;
     justify-content: space-between;
+    padding-left: 32px;
+    padding-right: 32px;
   }
   .footer-contacts {
     display: flex;
